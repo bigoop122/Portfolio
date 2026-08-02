@@ -115,6 +115,7 @@ let isDeleting = false;
 let typeSpeed = 100;
 
 function typewrite() {
+  if (!typewriterEl) return;
   const currentWord = words[wordIndex];
   
   if (isDeleting) {
@@ -139,7 +140,9 @@ function typewrite() {
   setTimeout(typewrite, typeSpeed);
 }
 
-typewrite();
+if (typewriterEl) {
+  typewrite();
+}
 
 // ========================================
 // SCROLL REVEAL
