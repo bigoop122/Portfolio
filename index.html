@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>@abaan1sdead — Builder of Things</title>
+  <meta name="description" content="Anonymous builder. Apps, tools, and experiments forged with AI and code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Floating particles -->
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- Geometric corner decorations -->
+  <div class="corner-deco top-left"></div>
+  <div class="corner-deco top-right"></div>
+  <div class="corner-deco bottom-left"></div>
+  <div class="corner-deco bottom-right"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="glitch" data-text="@abaan1sdead">@abaan1sdead</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#contact">contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <!-- Grid overlay -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    
+    <!-- Horizontal scan line -->
+    <div class="scan-line"></div>
+    <div class="hero-bg-text" aria-hidden="true">BUILD</div>
+    <div class="hero-content">
+      <div class="hero-label reveal">ANONYMOUS BUILDER</div>
+      <h1 class="hero-title reveal">
+        <span class="line">I build things</span>
+        <span class="line">that don't exist</span>
+        <span class="line accent-line">yet.</span>
+      </h1>
+      <p class="hero-sub reveal">Apps. Tools. Experiments.<br>Forged with <span class="typewriter" id="typewriter"></span></p>
+      <div class="hero-cta reveal">
+        <a href="#work" class="btn-primary">See the work</a>
+        <a href="#contact" class="btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- Animated divider -->
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-diamond">◆</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="floating-cross cross-1">+</div>
+    <div class="floating-cross cross-2">+</div>
+    <div class="section-grid">
+      <div class="section-label reveal">
+        <span class="label-num">01</span>
+        <span class="label-text">ABOUT</span>
+        <span class="label-line"></span>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title reveal">
+          No face.<br>No name.<br>Just <span class="strikethrough">code</span> craft.
+        </h2>
+        <p class="section-desc reveal">
+          I operate in the space between artificial intelligence and raw code.
+          I don't build for clout — I build because something needs to exist and nobody else is making it.
+        </p>
+        <p class="section-desc reveal">
+          Every project starts the same way: a problem that annoys me enough to solve it.
+          The tools are AI, Swift, JavaScript, Python, and whatever else gets the job done.
+        </p>
+        <div class="stats reveal">
+          <div class="stat">
+            <div class="stat-number" data-count="∞">∞</div>
+            <div class="stat-label">ideas in queue</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">build cycle</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">0</div>
+            <div class="stat-label">compromises</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>AI × CODE × DESIGN × SHIP × REPEAT × AI × CODE × DESIGN × SHIP × REPEAT × AI × CODE × DESIGN × SHIP × REPEAT × </span>
+    </div>
+  </div>
+
+  <!-- Animated divider -->
+  <div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-diamond">◆</div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- Work Section -->
+  <section class="section work" id="work">
+    <div class="section-grid">
+      <div class="section-label reveal">
+        <span class="label-num">02</span>
+        <span class="label-text">WORK</span>
+        <span class="label-line"></span>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title reveal">Selected<br>Projects.</h2>
+      </div>
+    </div>
+
+    <div class="projects">
+      <div class="project-card reveal" data-project="01">
+        <div class="project-number">01</div>
+        <div class="project-info">
+          <h3 class="project-name">MusiM</h3>
+          <p class="project-desc">iOS music player with crossfade, 10-band EQ, live waveform visualization, and Jamendo streaming. Built entirely with Swift & AVAudioEngine.</p>
+          <div class="project-tags">
+            <span>Swift</span><span>iOS</span><span>AVAudioEngine</span><span>Jamendo API</span>
+          </div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy -->
+  <section class="section philosophy">
+    <div class="big-quote reveal">
+      <span class="quote-mark">"</span>
+      Ship it before it's perfect.<br>
+      Fix it before they notice.<br>
+      Improve it before they ask.
+      <span class="quote-mark">"</span>
+    </div>
+  </section>
+
+  <!-- Stack Section -->
+  <section class="section stack">
+    <div class="section-grid">
+      <div class="section-label reveal">
+        <span class="label-num">03</span>
+        <span class="label-text">STACK</span>
+        <span class="label-line"></span>
+      </div>
+      <div class="section-content">
+        <h2 class="section-title reveal">Tools of<br>the trade.</h2>
+        <div class="stack-grid reveal">
+          <div class="stack-item">
+            <div class="stack-icon">⌘</div>
+            <div class="stack-name">Swift</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-icon">λ</div>
+            <div class="stack-name">Python</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-icon">{ }</div>
+            <div class="stack-name">JavaScript</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-icon">◈</div>
+            <div class="stack-name">Electron</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-icon">▲</div>
+            <div class="stack-name">AI / LLMs</div>
+          </div>
+          <div class="stack-item">
+            <div class="stack-icon">◉</div>
+            <div class="stack-name">Node.js</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="contact-content">
+      <div class="section-label reveal">
+        <span class="label-num">04</span>
+        <span class="label-text">CONTACT</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="contact-title reveal">
+        Got an idea?<br>
+        <span class="accent-line">Let's build it.</span>
+      </h2>
+      <p class="contact-desc reveal">
+        I'm always open to interesting projects, collaborations, or just a good conversation about what to build next.
+      </p>
+      <div class="contact-links reveal">
+        <a href="https://github.com/abaan1sdead" target="_blank" class="contact-link">
+          <span class="link-label">GitHub</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="link-label">Email (encrypted)</span>
+          <span class="link-arrow">↗</span>
+        </a>
+        <a href="#" class="contact-link">
+          <span class="link-label">Discord</span>
+          <span class="link-arrow">↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="glitch" data-text="@abaan1sdead">@abaan1sdead</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2025 — Built with obsession</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
