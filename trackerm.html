@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrackerM — @abaan1sdead</title>
+  <meta name="description" content="Download TrackerM - Anonymous Habit Tracker.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+  
+  <!-- Floating particles -->
+  <canvas id="particles" class="particles-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <a href="index.html" class="glitch" data-text="← back">← back</a>
+    </div>
+    <div class="nav-links">
+      <span class="glitch" data-text="@abaan1sdead">@abaan1sdead</span>
+    </div>
+  </nav>
+
+  <!-- Project Details Section -->
+  <section class="section project-page">
+    <div class="project-header reveal">
+      <div class="project-title-wrapper">
+        <img src="assets/trackerm-icon.jpg" alt="TrackerM Logo" class="project-logo">
+        <div>
+          <div class="project-meta">
+            <span class="project-tag">iOS App</span>
+            <span class="project-tag">SwiftUI</span>
+          </div>
+          <h1 class="project-title-large">TrackerM</h1>
+        </div>
+      </div>
+      <p class="project-subtitle">The ultimate anonymous habit tracker. Built for relentless consistency.</p>
+    </div>
+
+    <div class="project-content reveal">
+      <div class="project-features">
+        <h3>Features</h3>
+        <ul>
+          <li><strong>Pure Black UI:</strong> Zero distractions, dark mode perfection.</li>
+          <li><strong>Streak Heatmap:</strong> Visualize 30 days of progress at a glance.</li>
+          <li><strong>Daily Dashboard:</strong> Satisfying animated toggles for completion.</li>
+          <li><strong>Custom Habits:</strong> Define colors and titles for complete personalization.</li>
+          <li><strong>Local Storage:</strong> Your data never leaves your device. 100% privacy.</li>
+        </ul>
+      </div>
+
+      <div class="project-gallery reveal">
+        <h3>App Screenshots</h3>
+        <div class="screenshots-grid">
+          <img src="assets/trackerm-1.png" alt="TrackerM Dashboard Screenshot" class="screenshot-img">
+          <img src="assets/trackerm-2.png" alt="TrackerM Streak Screenshot" class="screenshot-img">
+          <img src="assets/trackerm-3.png" alt="TrackerM Details Screenshot" class="screenshot-img">
+        </div>
+      </div>
+
+      <div class="download-section reveal">
+        <div class="warning-box">
+          <span class="warning-icon">⚠</span>
+          <p>This is a sideloaded .ipa file. You will need AltStore, Sideloadly, or a developer certificate to install it on your iPhone.</p>
+        </div>
+        
+        <a href="downloads/TrackerM.ipa" download class="btn-primary btn-large">
+          <span class="btn-icon">↓</span> Download TrackerM.ipa
+        </a>
+        <p class="file-info">Size: ~3MB • Version: 1.0.0</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-left">
+        <span class="glitch" data-text="@abaan1sdead">@abaan1sdead</span>
+      </div>
+      <div class="footer-right">
+        <span>© 2025 — Built with obsession</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
